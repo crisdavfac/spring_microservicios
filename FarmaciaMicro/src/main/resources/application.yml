@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost/farmacia
+    username: postgres
+    password: crisdavfac24
+server:
+  port: 8080
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: https://cdf-eureka-sp.herokuapp.com/eureka #http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    nonSecurePort: 8080
+  
